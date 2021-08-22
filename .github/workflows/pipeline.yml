@@ -61,7 +61,7 @@ jobs:
                   }
               env:
                 SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-              if: ${{job.status=== 'success'}} # Pick up events even if the job fails or is canceled.
+              if: ${{job.status === 'success'}} # Pick up events even if the job fails or is canceled.
             - name: Slack fail
               uses: 8398a7/action-slack@v3
               with:
