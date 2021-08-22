@@ -55,7 +55,7 @@ jobs:
                 custom_payload: |
                   {
                     attachments: [{
-                      color: 'success',
+                      color: 'good',
                       text: `a new version deployed to https://salty-journey-10005.herokuapp.com/ (${process.env.AS_COMMIT}) by ${process.env.AS_AUTHOR} build took ${process.env.AS_TOOK}`,
                     }]
                   }
