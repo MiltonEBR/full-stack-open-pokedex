@@ -7,8 +7,7 @@ on:
     pull_request:
         branches: [master]
         types: [opened, synchronize]
-    schedule:
-        - cron: '* * * * *'
+    #schedule:
         #- cron: '0 23 * * *'
 
 jobs:
